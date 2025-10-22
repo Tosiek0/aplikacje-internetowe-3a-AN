@@ -40,8 +40,13 @@ $conn->close();
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Logowanie</title>
-      <style>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- 
+<style>
     body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; padding: 2rem; background: #f6f7fb; }
     .card { max-width: 520px; margin: 0 auto; background: #fff; padding: 1.5rem; border-radius: 14px; box-shadow: 0 6px 30px rgba(0,0,0,.08); }
     .row { display: flex; gap: 1rem; }
@@ -52,7 +57,9 @@ $conn->close();
     .errors { background:#ffe9e9; border:1px solid #ffb4b4; color:#8c1a1a; padding:.8rem; border-radius:10px; margin-bottom:1rem; }
     .ok { background:#e9ffef; border:1px solid #b4ffcb; color:#0c5c2a; padding:.8rem; border-radius:10px; margin-bottom:1rem; }
     small.muted { color:#667085; }
-  </style>
+</style>
+
+  -->
 </head>
 <body>
     <h1>Logowanie</h1>
@@ -61,11 +68,9 @@ $conn->close();
         <label for="login">Nazwa użytkownika</label><br>
         <input type="text" name="login" id="login" required><br><br>
 
-        <label for="pass">Hasło</label><br>
-        <input type="password" name="pass" id="pass" required><br><br>
-
-        <label for="captcha">Ile to 5 + 3?</label><br>
-        <input type="text" id="captcha" name="captcha" required><br><br>
+        <label for="pass">Haslo</label>
+        <input type="password" id="pass" class="form-control" aria-describedby="passwordHelpBlock">
+        <div id="passwordHelpBlock" class="form-text">
 
         <input type="submit" name="submit" value="Zaloguj">
     </form>
