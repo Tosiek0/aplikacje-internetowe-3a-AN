@@ -45,37 +45,48 @@ $conn->close();
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<!-- 
-<style>
-    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; padding: 2rem; background: #f6f7fb; }
-    .card { max-width: 520px; margin: 0 auto; background: #fff; padding: 1.5rem; border-radius: 14px; box-shadow: 0 6px 30px rgba(0,0,0,.08); }
-    .row { display: flex; gap: 1rem; }
-    .row > div { flex: 1; }
-    label { display:block; font-weight:600; margin:.25rem 0; }
-    input { width:75%; padding:.7rem .9rem; border:1px solid #d5d9e0; border-radius:10px; }
-    button { padding:.8rem 1.1rem; border:0; border-radius:10px; background:#2f6feb; color:#fff; font-weight:700; cursor:pointer; }
-    .errors { background:#ffe9e9; border:1px solid #ffb4b4; color:#8c1a1a; padding:.8rem; border-radius:10px; margin-bottom:1rem; }
-    .ok { background:#e9ffef; border:1px solid #b4ffcb; color:#0c5c2a; padding:.8rem; border-radius:10px; margin-bottom:1rem; }
-    small.muted { color:#667085; }
-</style>
-
-  -->
+    <style>
+        body { 
+            background-color: #f6f7fb; 
+            font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+        }
+        .login-card {
+            max-width: 400px;
+            margin: 5rem auto;
+            padding: 2rem;
+            background: #000000ff;
+            border-radius: 1rem;
+            box-shadow: 0 6px 30px rgba(0,0,0,0.08);
+        }
+    </style>
 </head>
 <body>
-    <h1>Logowanie</h1>
-    <center>
-    <form method="POST" action="_login_db.php">
-        <label for="login">Nazwa użytkownika</label><br>
-        <input type="text" name="login" id="login" required><br><br>
+<div class="login-card">
+        <h2 class="text-center mb-4">Logowanie</h2>
+        <form method="POST" action="_login_db.php">
+            <div class="mb-3">
+                <label for="login" class="form-label">Nazwa użytkownika</label>
+                <input type="text" name="login" id="login" class="form-control" required>
+            </div>
 
-        <label for="pass">Haslo</label>
-        <input type="password" id="pass" class="form-control" aria-describedby="passwordHelpBlock">
-        <div id="passwordHelpBlock" class="form-text">
+            <div class="mb-3">
+                <label for="pass" class="form-label">Hasło</label>
+                <input type="password" name="pass" id="pass" class="form-control" required>
+            </div>
 
-        <input type="submit" name="submit" value="Zaloguj">
-    </form>
+            <div class="mb-3">
+                <label for="captcha" class="form-label">Ile to 3 + 5?</label>
+                <input type="text" name="captcha" id="captcha" class="form-control" required>
+            </div>
 
-    <p>Nie masz konta? <a href="_register_db.php">Zarejestruj się</a></p>
-    </center>
+            <button type="submit" class="btn btn-primary w-100">Zaloguj</button>
+        </form>
+
+        <div class="text-center mt-3">
+            <small>Nie masz konta? <a href="_register_db.php">Zarejestruj się</a></small>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
