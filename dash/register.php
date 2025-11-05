@@ -44,19 +44,8 @@ $conn->close();
 <head>
     <meta charset="UTF-8">
     <title>Rejestracja</title>
-      <style>
-    h1 {text-align: center; margin-bottom: 100px;}
-    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; padding: 2rem; background: #f6f7fb; }
-    .card { max-width: 520px; margin: 0 auto; background: #fff; padding: 1.5rem; border-radius: 14px; box-shadow: 0 6px 30px rgba(0,0,0,.08); }
-    .row { display: flex; gap: 1rem; }
-    .row > div { flex: 1; }
-    label { display:block; font-weight:600; margin:.25rem 0; }
-    input {width:75%; padding:.7rem .9rem; border:1px solid #d5d9e0; border-radius:10px; }
-    button { padding:.8rem 1.1rem; border:0; border-radius:10px; background:#2f6feb; color:#fff; font-weight:700; cursor:pointer; }
-    .errors { background:#ffe9e9; border:1px solid #ffb4b4; color:#8c1a1a; padding:.8rem; border-radius:10px; margin-bottom:1rem; }
-    .ok { background:#e9ffef; border:1px solid #b4ffcb; color:#0c5c2a; padding:.8rem; border-radius:10px; margin-bottom:1rem; }
-    small.muted { color:#667085; }
-  </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <h1>Rejestracja</h1>
@@ -74,5 +63,6 @@ $conn->close();
         <input type="submit" name="submit" value="Zarejestruj">
     </form>
     </center>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
