@@ -48,7 +48,6 @@ $conn->close();
     <link rel="stylesheet" href="css/login_style.css">
 </head>
 <body>
-    <h1>Rejestracja</h1>
 <div class="login-card">
     <h2 class="text-center mb-4">Rejestracja</h2>
     <form method="POST" action="register.php">
