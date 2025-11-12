@@ -8,6 +8,6 @@
 <body>
     <h1>Udało ci się zarejestrowac<h1>
     <br>
-    <a href="_login_db.php">Zaloguj się</a>
+    <a href="login.php">Zaloguj się</a>
 </body>
 </html>

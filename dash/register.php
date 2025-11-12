@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->bind_param("ss", $login, $pass); 
 
     if ($stmt->execute()) {
-        header("Location: _registered_db.php"); 
+        header("Location: registered.php"); 
         exit();
     } else {
         echo "Błąd: " . $stmt->error;
@@ -50,7 +50,7 @@ $conn->close();
 <body>
     <h1>Rejestracja</h1>
     <center>
-    <form method="POST" action="_register_db.php">
+    <form method="POST" action="register.php">
         <label for="login">Nazwa użytkownika</label><br>
         <input type="text" name="login" id="login" required><br><br>
 

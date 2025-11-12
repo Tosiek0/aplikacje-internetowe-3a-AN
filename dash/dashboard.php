@@ -9,6 +9,6 @@ session_start();
 </head>
 <body>
 	<p>Zostałeś zalogowany</p>
-	<p><a href="_logout_db.php">Wyloguj mnie</a></p>
+	<p><a href="logout.php">Wyloguj mnie</a></p>
 </body>
 </html>
