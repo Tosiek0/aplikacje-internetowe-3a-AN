@@ -45,24 +45,35 @@ $conn->close();
     <meta charset="UTF-8">
     <title>Rejestracja</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login_style.css">
 </head>
 <body>
     <h1>Rejestracja</h1>
-    <center>
+<div class="login-card">
+    <h2 class="text-center mb-4">Rejestracja</h2>
     <form method="POST" action="register.php">
-        <label for="login">Nazwa użytkownika</label><br>
-        <input type="text" name="login" id="login" required><br><br>
+        <div class="mb-3">
+            <label for="login" class="form-label">Nazwa użytkownika</label>
+            <input type="text" name="login" id="login" class="form-control" required>
+        </div>
 
-        <label for="pass">Hasło</label><br>
-        <input type="password" name="pass" id="pass" minlength="8" required><br><br>
+        <div class="mb-3">
+            <label for="pass" class="form-label">Hasło</label>
+            <input type="password" name="pass" id="pass" class="form-control" minlength="8" required>
+        </div>
 
-        <label for="pass_repeat">Powtórz hasło</label><br>
-        <input type="password" name="pass_repeat" id="pass_repeat" required><br><br>
+        <div class="mb-3">
+            <label for="pass_repeat" class="form-label">Powtórz hasło</label>
+            <input type="password" name="pass_repeat" id="pass_repeat" class="form-control" required>
+        </div>
 
-        <input type="submit" name="submit" value="Zarejestruj">
+        <button type="submit" class="btn btn-primary w-100">Zarejestruj</button>
     </form>
-    </center>
+
+    <div class="text-center mt-3">
+        <small>Masz już konto? <a href="login.php">Zaloguj się</a></small>
+    </div>
+</div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
