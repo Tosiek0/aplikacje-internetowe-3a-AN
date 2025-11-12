@@ -44,11 +44,12 @@ $conn->close();
 <head>
     <meta charset="UTF-8">
     <title>Rejestracja</title>
+
     <link href="css/boot.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div class="register-card">
+<div class="login-card">
     <h2 class="text-center mb-4">Rejestracja</h2>
     <form method="POST" action="register.php">
         <div class="mb-3">
